@@ -1,0 +1,22 @@
+{
+  "name": "constructor-word-guess",
+  "version": "1.0.0",
+  "description": "Advanced JavaScript Assignment: Constructor Word Guess",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdb443/Constructor-Word-Guess.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jdb443/Constructor-Word-Guess/issues"
+  },
+  "homepage": "https://github.com/jdb443/Constructor-Word-Guess#readme",
+  "dependencies": {
+    "inquirer": "^6.4.1"
+  }
+}
