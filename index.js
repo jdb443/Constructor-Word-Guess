@@ -8,7 +8,7 @@ var data = "";
 var previousWord = "";
 var computerGuess = "";
 
-// This function picks a random animal name from an array and stores in Word construtor function
+// This function picks a random sports name from an array and stores in Word construtor function.
 function playGame() {
     var wordChoices = [
         "aerobics", 
@@ -200,7 +200,6 @@ function playGame() {
         "windsurfing",
         "wrestling"
 
-
     ];
     computerGuess = wordChoices[Math.floor(Math.random() * wordChoices.length)];
     // console.log(computerGuess);
@@ -218,7 +217,6 @@ function playGame() {
     checkUserInput();
 }
 
-
 function checkUserInput() {
     if (numberOfGuesses > 0) {
         inquirer.prompt([
@@ -228,6 +226,7 @@ function checkUserInput() {
                 name: "userGuessedLetter",
                 message: "Guess a letter!!!"
             }
+            
         ]).then(function (response) {
             //console.log(response.guessedLetter);
             data.isLetterGuessed(response.userGuessedLetter.toLowerCase());
@@ -247,13 +246,12 @@ function checkUserInput() {
                 name: "playAgain",
                 message: "Do you want to Play again?",
                 default: true
-
             }
+
         ]).then(function (response) {
             if (response.playAgain) {
                 playGame();
             }
-
 
         });
 
@@ -262,8 +260,8 @@ function checkUserInput() {
 }
 
 playGame();
-//This function checks for the userGuessedword and displays information accordingly.Also keeps track
-//of the number of guesses remaining.
+// This function checks for the user guessed word and displays information accordingly.
+// It keeps track of the number of guesses remaining.
 function checkNumGuesses(userGuessedWord) {
     userGuessedWord = userGuessedWord.split(" ").join("");
     previousWord = previousWord.split(" ").join("");
@@ -282,6 +280,5 @@ function checkNumGuesses(userGuessedWord) {
     }
     else if (previousWord !== userGuessedWord)
         console.log("\x1b[32m%s\x1b[0m", "CORRECT!!!\n");
-
 
 }
