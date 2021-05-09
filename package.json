@@ -18,6 +18,6 @@
   "homepage": "https://github.com/jdb443/Constructor-Word-Guess#readme",
   "dependencies": {
     "inquirer": "^6.5.0",
-    "lodash": "^4.17.20"
+    "lodash": "^4.17.21"
   }
 }
